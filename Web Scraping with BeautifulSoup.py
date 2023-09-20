@@ -102,8 +102,7 @@ def set_browser_as_incognito(options):
 
 
 # ## scrap data from wikipedia
-# url="https://en.wikipedia.org/wiki/World_War_II"
-url="https://careersindia-principal.icims.com/jobs/search?hashed=-625979987&mobile=false&width=1140&height=500&bga=true&needsRedirect=false&jan1offset=-360&jun1offset=-300"
+url="https://en.wikipedia.org/wiki/World_War_II"
 wiki=requests.get(url)
 # soup=BeautifulSoup(wiki.text,'html')
 soup=BeautifulSoup(wiki.text,'lxml')
